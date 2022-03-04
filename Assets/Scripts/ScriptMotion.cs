@@ -51,7 +51,6 @@ public class ScriptMotion : MonoBehaviour
         }
     }
     public void OnCollisionEnter2D(Collision2D col){
-        Debug.Log("Collision with"+ col);
         if(col.gameObject.tag=="asteroid"){
             PlayerManager.gameOver=true;
         }
